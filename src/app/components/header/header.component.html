@@ -1,0 +1,25 @@
+<div class="header-container">
+  <img class="logo-image" src="assets/images/logo.svg">
+  <div class="header-menus">
+    <span>Products</span>
+    <span>About</span>
+    <span>Category</span>
+    <span>News</span>
+    <span>Contact</span>
+  </div>
+  <div (click)="toggleMenu()" [ngClass]="{'active' : isActive}" class="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+
+<div [ngClass]="{'active' : isActive}" class="overlay-menu">
+  <img (click)="toggleMenu()" src="assets/images/cross.svg">
+  <span>Products</span>
+  <span>About</span>
+  <span>Category</span>
+  <span>News</span>
+  <span>Contact</span>
+</div>
